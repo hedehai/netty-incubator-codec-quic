@@ -44,7 +44,7 @@ jobs:
         with:
           profile: minimal
           toolchain: stable
-          target: x86-pc-windows-msvc
+          target: i686-pc-windows-msvc
           override: true
 
       - name: Add msbuild to PATH
