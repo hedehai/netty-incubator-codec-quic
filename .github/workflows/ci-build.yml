@@ -19,12 +19,6 @@ on:
   push:
     branches: [ main ]
 
-  schedule:
-    - cron: '30 7 * * 1'  # At 07:30 on Monday, every Monday.
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
 env:
   MAVEN_OPTS: -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.http.retryhandler.count=5 -Dmaven.wagon.httpconnectionManager.ttlSeconds=240
 
