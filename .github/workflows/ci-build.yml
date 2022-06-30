@@ -50,7 +50,7 @@ jobs:
         with:
           profile: minimal
           toolchain: stable
-          target: x86_64-pc-windows-msvc
+          target: x86-pc-windows-msvc
           override: true
 
       - name: Add msbuild to PATH
@@ -59,7 +59,7 @@ jobs:
       - name: Configuring Developer Command Prompt
         uses: ilammy/msvc-dev-cmd@v1
         with:
-          arch: x86_amd64
+          arch: x86
 
       - name: Install tools
         uses: crazy-max/ghaction-chocolatey@v1
@@ -70,9 +70,9 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: ~/.m2/repository
-          key: windows-x86_64-maven-cache-${{ hashFiles('**/pom.xml') }}
+          key: windows-x86-maven-cache-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
-            windows-x86_64-maven-cache-
+            windows-x86-maven-cache-
 
       - name: Build project
         run: ./mvnw.cmd -B -ntp --file pom.xml clean package
