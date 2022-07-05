@@ -87,7 +87,7 @@
       </activation>
       <properties>
         <boringsslHomeBuildDir>${boringsslHomeDir}/build/RelWithDebInfo</boringsslHomeBuildDir>
-        <quicheTarget>x86_64-pc-windows-msvc</quicheTarget>
+        <quicheTarget>i686-pc-windows-msvc</quicheTarget>
         <cargoTarget>--target=${quicheTarget}</cargoTarget>
         <quicheBuildDir>${quicheSourceDir}/target/${quicheTarget}/release</quicheBuildDir>
         <cmakeAsmFlags />
