@@ -38,6 +38,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 8
+          architecture: x86
 
       - name: Install stable toolchain
         uses: actions-rs/toolchain@v1
