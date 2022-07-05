@@ -54,7 +54,7 @@ jobs:
       - name: Configuring Developer Command Prompt
         uses: ilammy/msvc-dev-cmd@v1
         with:
-          arch: x86
+          arch: amd64_x86
 
       - name: Install tools
         uses: crazy-max/ghaction-chocolatey@v1
